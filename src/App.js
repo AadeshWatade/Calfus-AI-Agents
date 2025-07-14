@@ -184,7 +184,7 @@ const AgentCard = ({ iconName, title, description, url, onSelect }) => {
       : url;
 
   return (
-    <div className="bg-white rounded-2xl shadow-lg p-6 text-center flex flex-col items-center transform hover:-translate-y-2 transition-transform duration-300 group">
+    <div className="bg-white rounded-2xl shadow-lg p-6 text-center flex flex-col items-center transform hover:scale-105 transition-transform duration-300 group">
       <div className="bg-custom-accent bg-opacity-10 rounded-full p-4 mb-4">
         <IconComponent className="w-10 h-10 text-custom-accent" />
       </div>
@@ -208,18 +208,6 @@ const AgentCard = ({ iconName, title, description, url, onSelect }) => {
 const AgentsPage = () => {
   const agents = [
     {
-      iconName: 'aCT',
-      title: 'aCT',
-      description: 'Agentic AI Solution for Test Script Execution and Report Generation.',
-      url: '#', // Placeholder URL
-    },
-    {
-      iconName: 'TransforMate',
-      title: 'TransforMate',
-      description: 'Agentic AI Solution for efficient data ingestion, cleansing, transformation, and integration.',
-      url: 'https://transformate-demo.vercel.app/',
-    },
-    {
       iconName: 'Explora',
       title: 'Explora',
       description: 'Agentic AI Solution to automate requirement gathering and creation of BRD from notes.',
@@ -230,6 +218,18 @@ const AgentsPage = () => {
       title: 'Opticode',
       description: 'Agentic AI Solution to generate and optimize code for Oracle EPM solutions.',
       url: '#',
+    },
+    {
+      iconName: 'TransforMate',
+      title: 'TransforMate',
+      description: 'Agentic AI Solution for efficient data ingestion, cleansing, transformation, and integration.',
+      url: 'https://transformate-demo.vercel.app/',
+    },
+    {
+      iconName: 'aCT',
+      title: 'aCT',
+      description: 'Agentic AI Solution for Test Script Execution and Report Generation.',
+      url: '#', // Placeholder URL
     },
   ];
 
